@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+        <title>Products App</title>
+        <!--BOOTSTRAP CDN -->
+        <!-- Own styles -->
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <!-- NAVIGATION -->
+        <nav class="navbar navbar-dark bg-dark">
+            <a href="/" class="navbar-brand">
+                Products App
+            </a>
+        </nav>
+
+        <div class="container my-5">
+            <!-- APLICATION -->
+            <div id="App" class="row pt-3">
+                <!-- Form -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <!-- Form tittle -->
+                        <div class="card-header">
+                            <h4>Add product</h4>
+                        </div>
+                        <!--  -->
+                        <form class="card-body" id="product-form" >
+                            <!-- Products input -->
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Product Name"
+                                class="form-control">
+                            </div>
+                            <!-- Price product -->
+                            <div class="form-group">
+                                <input type="number" step="0.01" id="price" placeholder="Product price"
+                                class="form-control">
+                            </div>
+                            <!-- Year product -->
+                            <div class="form-group">
+                                <input type="number" value="2019" min="2000"  id="year" class="form-control"
+                                placeholder="Year product">
+                            </div>
+                            <!-- Add product button -->
+                            <button type="submit" class="btn btn-dark w-100">Save</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Products -->
+                <div id="product-list" class="col-md-8">
+                    <h2 id="product-title" class="text-center z-depth-1">Products list</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="instructions" tabindex="-1" role="dialog" aria-labelledby="startingModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Product app</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                <ul class="list-group">
+                    <p>
+                        To use this application you must complete the formulary and click in save to save and create de product.
+                    </p>
+                </ul>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                <button type="button" class="btn btn-success w-100" data-dismiss="modal">Start</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- /Modal -->
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+        <!-- App script -->
+        <script src="./app.js" ></script>
+    </body>
+</html>
