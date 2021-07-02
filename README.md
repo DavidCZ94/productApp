@@ -1,6 +1,6 @@
 # productApp
 
-This is a simple app were you can add and delete products from a list from a form. The objective with this app is practice and understand how javascript can manage and show the information with html and css.
+This is a simple app were you can add and delete products from a list. The objective with this app is practice and understand how javascript can manage and show the information with html and css.
 
 ## Usage
 
